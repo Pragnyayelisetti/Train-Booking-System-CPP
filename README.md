@@ -1,13 +1,34 @@
-# 🚆 Train Booking System (C++ | Object-Oriented Programming)
+# Train Booking System (C++, OOPS)
 
-**Problem Statement:**  
-Railway ticket booking is traditionally handled through manual or semi-automated systems that can lead to inefficiencies such as incorrect seat tracking, delays in booking and cancellation, and difficulty in managing passenger information. For students learning programming, there is also a need to understand how real-world problems can be translated into software solutions using Object-Oriented Programming concepts. The problem addressed in this project is to design and implement a simple yet effective train booking system that automates ticket booking, ticket cancellation, and seat availability tracking using C++, while clearly demonstrating the application of OOPS principles.
+## Problem Statement
+In real-world railway reservation systems, managing train details, handling ticket bookings, cancellations, and tracking seat availability efficiently is crucial. Manual systems or poorly designed software solutions can lead to errors, delays, and inaccurate seat management. For students learning C++, it is important to understand how such real-life problems can be modeled using Object-Oriented Programming (OOPS) concepts. The challenge is to design a simple, organized, and reliable train booking system that demonstrates these concepts clearly without unnecessary complexity.
 
-**Description:**  
-The Train Booking System is a console-based application developed in C++ that simulates the core functionalities of a basic railway reservation system. The system provides a menu-driven interface through which users can interact with the application. Users can view a list of available trains along with their train numbers, routes, and the number of seats currently available. When a user chooses to book a ticket, the system collects passenger details such as name and age, checks seat availability for the selected train, and generates a unique ticket ID upon successful booking. The application also allows users to cancel an existing ticket using the ticket ID, after which the seat availability is automatically updated. The system ensures that seat counts remain consistent and accurate throughout all operations. This project is designed to be simple, readable, and suitable for academic purposes, making it ideal for beginners who are learning C++ and Object-Oriented Programming.
+## Project Description
+This project is a console-based Train Booking System developed using C++. It simulates the basic workflow of a railway reservation system, allowing users to view available trains, book tickets, cancel bookings, and monitor seat availability in real time. The primary focus of the project is on clean class design, logical flow, and effective use of OOPS principles rather than advanced features such as databases or graphical interfaces.
 
-**Solution:**  
-The solution is implemented using Object-Oriented Programming principles to ensure modularity, clarity, and ease of maintenance. The system is divided into multiple classes, each responsible for a specific task. Encapsulation is used to bind data members and related functions within classes such as Train, Passenger, Ticket, and TrainBookingSystem. Inheritance is applied by creating a base class Person that stores common attributes like name and age, which is then extended by the Passenger class to promote code reusability. Abstraction is achieved through a menu-driven interface that hides the internal working of the system from the user and exposes only necessary operations such as booking and cancellation. Composition is used where the Ticket class contains objects of Passenger and references to Train, representing a real-world booking relationship. The entire system is implemented using standard C++ and STL containers like vectors to efficiently manage trains and tickets. This structured approach results in a clean, maintainable, and scalable console-based train booking system.
+The system follows a menu-driven approach, making it easy for users to interact with the application. Each major responsibility of the system is handled by a separate class, ensuring better readability, maintainability, and ease of explanation during academic evaluations or interviews.
 
-Author: Pragnya Yelisetti  
-GitHub: https://github.com/Pragnyayelisetti  
+## Solution Approach
+The solution is implemented using core C++ and follows Object-Oriented Programming principles to achieve modular and structured design. The system is divided into multiple classes, each responsible for a specific part of the booking process:
+- The **Person** class acts as a base class containing common attributes such as name and age.
+- The **Passenger** class inherits from the Person class and represents passengers booking tickets.
+- The **Train** class stores train-related information and manages seat availability.
+- The **Ticket** class represents individual bookings and maintains the relationship between passengers and trains.
+- The **TrainBookingSystem** class controls the overall flow of the application, including displaying trains, booking tickets, and handling cancellations.
+
+This approach ensures proper encapsulation, inheritance, and abstraction, resulting in a clean and maintainable codebase. The program runs entirely in the console and demonstrates the complete process from selecting a train to booking and cancelling tickets.
+
+## Technologies Used
+- **C++**
+- **Object-Oriented Programming (OOPS)**
+  - Classes and Objects  
+  - Encapsulation  
+  - Inheritance  
+  - Abstraction  
+  - Composition  
+- **Git & GitHub** for version control
+
+---
+
+Author: **Pragnya Yelisetti**  
+GitHub: https://github.com/Pragnyayelisetti
